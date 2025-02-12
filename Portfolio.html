@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="./Portfolio_files/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/#about">About Me</a></li>
+                <li><a href="http://127.0.0.1:5500/#skills">Skills</a></li>
+                <li><a href="http://127.0.0.1:5500/#projects">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="./Portfolio_files/profile.jpg" alt="Profile Picture">
+        <h1>Hi, I'm [JAGNYASENI]</h1>
+        <p>I'm a passionate web developer with a keen interest in creating beautiful and functional websites. I specialize in front-end development and love learning new technologies.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>AI-ML</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1: Flipkart Analysis -->
+        <div class="project">
+            <img src="./Portfolio_files/project1.jpg" alt="Flipkart Sales Data Analysis">
+            <h3>Flipkart Sales Data Analysis</h3>
+            <p>In this project, I analyzed Flipkart's sales data to uncover insights about top-performing products, seasonal trends, and regional performance using Python, Pandas, and data visualization tools like Matplotlib.In this project, I performed a comprehensive analysis of Flipkart's sales data to extract actionable insights and trends that could help in improving business strategies. The dataset provided various aspects of the e-commerce platform's sales, including product categories, customer demographics, sales over time, and regional performance.
+
+                I used tools like Python, Pandas, Matplotlib, and Seaborn to analyze and visualize the data. The main goal was to identify trends, top-selling products, customer preferences, and areas for potential growth.</p>
+            <a href="http://127.0.0.1:5500/#" class="project-link">View Project</a>
+        </div>
+
+        <!-- Project 2: Diabetes Prediction -->
+        <div class="project">
+            <img src="./Portfolio_files/project2.jpg" alt="Diabetes Prediction">
+            <h3>Diabetes Prediction using Machine Learning</h3>
+            <p>In this machine learning project, I built a predictive model to assess the risk of diabetes based on patient health records, using various classification algorithms such as Logistic Regression and Random Forest.In this project, I developed a machine learning model to predict whether a person is likely to develop diabetes based on various health factors such as age, blood pressure, insulin levels, and body mass index (BMI). The dataset used for this project contains patient health records, and the goal was to create a predictive model that can identify individuals at risk of diabetes.
+
+                The project involved building a classification model, where the output is a binary classification (diabetic or non-diabetic). I used various machine learning algorithms to train the model and compared their performance based on accuracy and precision.</p>
+            <a href="http://127.0.0.1:5500/#" class="project-link">View Project</a>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume below:</p>
+        <a href="http://127.0.0.1:5500/assets/rani_cv.pdf" download="">Download Resume</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: [jagnyasenidas1@gmail.com]</p>
+        <p>Connect with me on <a href="https://linkedin.com/in/jagnyaseni-das-b845ba302?" target="_blank">LinkedIn</a> | <a href="https://github.com/jagnyaseni" target="_blank">GitHub</a></p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
